@@ -15,6 +15,7 @@ public class MainContract {
         abstract void goToBottomSheets();
         abstract void goToGlide();
         abstract void goToPhotoView();
+        abstract void goToUCrop();
         abstract void showList(List<String> moduleNames);
     }
 

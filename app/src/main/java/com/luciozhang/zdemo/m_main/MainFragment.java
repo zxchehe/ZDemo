@@ -24,6 +24,7 @@ import com.luciozhang.zdemo.m_bottomsheets.BottomSheetsActivity;
 import com.luciozhang.zdemo.m_glide.GlideActivity;
 import com.luciozhang.zdemo.m_main.adapter.NormalRecyclerViewAdapter;
 import com.luciozhang.zdemo.m_photoview.PhotoViewActivity;
+import com.luciozhang.zdemo.m_ucrop.UCropActivity;
 import com.luciozhang.zdemo.utils.ItemClickSupport;
 import com.luciozhang.zdemo.utils.ToastUtils;
 
@@ -145,6 +146,12 @@ public class MainFragment extends Fragment implements MainContract.View ,Navigat
         startActivity(intent);
     }
 
+    @Override
+    public void goToUCrop() {
+        Intent intent = new Intent(getContext(), UCropActivity.class);
+        startActivity(intent);
+    }
+
 
     @Override
     public void showList(List<String> moduleNames) {
@@ -163,6 +170,9 @@ public class MainFragment extends Fragment implements MainContract.View ,Navigat
                         break;
                     case "PhotoView":
                         goToPhotoView();
+                        break;
+                    case "uCrop":
+                        goToUCrop();
                         break;
                     default:
                         break;
