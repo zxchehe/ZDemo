@@ -29,6 +29,9 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".m_glide.GlideActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".m_photoview.PhotoViewActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 

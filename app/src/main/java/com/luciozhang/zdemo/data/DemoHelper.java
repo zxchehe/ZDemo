@@ -16,6 +16,7 @@ public class DemoHelper {
         demos.clear();
         demos.add("BottomSheets");
         demos.add("Glide");
+        demos.add("PhotoView");
     }
 
     public static DemoHelper getInstance(){

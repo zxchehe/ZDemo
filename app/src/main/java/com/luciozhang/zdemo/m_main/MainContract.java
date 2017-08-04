@@ -14,6 +14,7 @@ public class MainContract {
     interface View extends BaseView<MainContract.Presenter> {
         abstract void goToBottomSheets();
         abstract void goToGlide();
+        abstract void goToPhotoView();
         abstract void showList(List<String> moduleNames);
     }
 
